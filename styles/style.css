@@ -1,0 +1,295 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffaf7;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #e0cfc2;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #3e2f2f;
+  margin-bottom: 10px;
+}
+nav {
+  background-color: #d1b8a3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: #b89b83;
+}
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+footer {
+  background-color: #3e2f2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+button {
+  background-color: #a9826c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #8a6a55;
+}
+@media (max-width: 768px) {
+  nav a {
+    padding: 10px;
+  }
+  main {
+    padding: 10px;
+  }
+}
+.products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .product {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product h3 {
+      font-family: 'Playfair Display', serif;
+      color: #5c4333;
+      margin: 10px 0;
+    }
+
+    .product p {
+      color: #666;
+    }
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #5c4333;
+      margin-bottom: 15px;
+    }
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .member {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+    }
+
+    .member h3 {
+      font-family: 'Playfair Display', serif;
+      color: #5c4333;
+    }
+
+    .member p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .blog-post {
+      background-color: white;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .blog-post h2 {
+      font-family: 'Playfair Display', serif;
+      color: #5c4333;
+      margin-top: 0;
+    }
+
+    .blog-post p {
+      line-height: 1.6;
+    }
+
+    .blog-post a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #a9826c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .blog-post a:hover {
+      text-decoration: underline;
+    }
+    h1{
+    font-family: 'Playfair Display', serif;
+      color: #5c4333;
+      margin-bottom: 20px;
+    }
+    header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #3e2f2f;
+    }
+    header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #3e2f2f;
+    }
+    .soru {
+      background-color: #f5eee9;
+      padding: 15px 20px;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .cevap {
+      display: none;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-left: 4px solid #a9826c;
+      margin-bottom: 15px;
+      border-radius: 0 0 8px 8px;
+      transition: all 0.3s ease;
+    }
+
+    .cevap.active {
+      display: block;
+    }
+    main {
+  display: flex;               
+  justify-content: center;     
+  align-items: flex-start;     
+  gap: 40px;                  
+  padding: 40px 20px;
+  flex-wrap: wrap;            
+}
+
+.product-images img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  max-width: 500px;
+}
+
+.product-details h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #4b2e2e;
+}
+
+.product-details .description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+.combo-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .combo-buttons button {
+    background: #a9826c;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .combo-buttons button:hover,
+  .combo-buttons button.active {
+    background: #8a6a55;
+  }
+  .combo-display {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  .combo-image {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  .combo-image.active {
+    opacity: 1;
+    position: relative;
+  }
+
